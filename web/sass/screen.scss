@@ -1,0 +1,216 @@
+@import "compass/css3/images";
+@import "compass/css3/border-radius";
+@import "compass/css3/transform";
+
+$debug-border-width: 0px;
+
+body {
+    font-family: Raleway;
+    background-color: #eee;
+    background-attachment: fixed;
+
+    @include background-image(
+        radial-gradient(
+            at 50% 50%,
+            white,
+            #eee
+        )
+    );
+}
+
+
+// -- FIRST PAGE --
+.header-container {
+    height: calc(100vh - 50px);
+    margin-top: -20px;
+    border: $debug-border-width solid red;
+}
+
+.home-header-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+    border: $debug-border-width solid red;
+}
+
+.home-header {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+
+    border: $debug-border-width solid blue;
+
+    h1 {
+        text-shadow: 2px 4px #C19905;
+        border: $debug-border-width solid black;
+        color: #111;
+        font-family: UnifrakturCook;
+        font-size: 80px;
+        line-height: 1.2em;
+        letter-spacing: 1.2px;
+        // margin-bottom: 50px;
+    }
+
+    p {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+.content-container {
+    height: 100vh;
+    border: $debug-border-width solid blue;
+}
+
+.full-screen {
+    height: 50%;
+}
+
+.content-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+    margin-left: -15px;
+    width: calc(100% + 30px);
+}
+
+.content {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+
+    border: $debug-border-width solid green;
+
+    p {
+        font-size: 48px;
+        font-family: Gruppo;
+        margin: 0;
+        line-height: 1em;
+    }
+}
+
+div[class*="col-"] {
+    height: 100%;
+}
+
+img.illustration {
+    width: 80%;
+    box-shadow: 1px 1px 50px 25px rgba(0,0,0, 0.4);
+}
+
+
+#id2 {
+    color: white;
+    background-color: darken(lime, 10%);
+
+    // transform: perspective(100px) rotateX(0.2deg) translateY(4%) translateZ(10px);
+    // transform: perspective(100px) rotateZ(2deg);
+
+    @include background-image(
+        radial-gradient(
+            at 50% 50%,
+            darken(lime, 10%),
+            darken(lime, 15%)
+        )
+    );
+
+    .content {
+        // transform: perspective(100px) rotateZ(-2deg);
+        // transform: perspective(100px) rotateX(-0.2eg) translateY(0%);
+    }
+}
+
+#id3 {
+    background-color: darken(#0ff, 10%);
+
+    // transform: perspective(100px) rotateX(-0.5deg) rotateY(-0.15deg) rotateZ(-1deg) translateY(-4%) translateZ(5px);
+
+    @include background-image(
+        radial-gradient(
+            at 50% 50%,
+            darken(#0ff, 10%),
+            darken(#0ff, 15%)
+        )
+    );
+
+    .content {
+        // transform: perspective(100px) rotateZ(1deg);
+    }
+}
+
+#id4 {
+    background-color: darken(#f0f, 10%);
+
+    // transform: perspective(100px) rotateX(0.3deg) rotateY(0.75deg) rotateZ(1deg) translateY(-4%) translateZ(5px);
+
+    @include background-image(
+        radial-gradient(
+            at 50% 50%,
+            darken(#f0f, 10%),
+            darken(#f0f, 15%)
+        )
+    );
+
+    .content {
+        // transform: perspective(100px) rotateZ(-1deg);
+    }
+}
+
+
+// -- MEDIUM SCREEN --
+@media (min-width: 768px) {
+
+    .home-header {
+        h1 {
+            font-size: 120px;
+        }
+    }
+}
+
+
+// -- LARGE SCREEN --
+@media (min-width: 1200px) {
+
+    .home-header {
+        h1 {
+            font-size: 196px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 60px;
+            margin-bottom: 150px;
+        }
+    }
+
+    .content-wrapper {
+        width: calc(100% + 40px);
+    }
+
+    .content {
+        p {
+            font-size: 196px;
+        }
+    }
+
+    .full-screen {
+        height: 100%;
+    }
+
+    // #id2 {
+    //
+    //     .content {
+    //         transform: perspective(100px) rotateZ(-2deg);
+    //         transform: perspective(100px) rotateX(-0.2eg) translateY(0%);
+    //     }
+    // }
+
+    // #id3 {
+    //
+    //     .content {
+    //         transform: perspective(100px) rotateZ(1deg);
+    //     }
+    // }
+}

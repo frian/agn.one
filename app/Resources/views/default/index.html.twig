@@ -1,0 +1,138 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <!-- Local CSS -->
+    <link href="/css/screen.css" media="screen" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block body %}
+
+<div id="fullpage">
+
+    <!-- == PAGE 1 ======================================================== -->
+	<div class="section active" id="section0">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid" id="test">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Agnone Bello</a>
+                </div>
+                <!-- end navbar-header -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">Link
+                                <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container-fluid header-container">
+            <div class="home-header-wrapper">
+                <div class="home-header">
+                    <h1>Agnone Bello</h1>
+                    <p>il sito non ufficiale de Agnone, Isernia, Molise</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- == PAGE 2 ======================================================== -->
+	<div class="section" id="section1">
+
+        <div class="container-fluid content-container">
+            <div class="row full-screen">
+                <div class="col-xs-12 col-lg-6">
+                    <div class="content-wrapper" id="id2">
+                        <div class="content">
+                            <p>eat</p>
+                            <p>drink</p>
+                            <p>sleep</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="content-wrapper">
+                        <div class="content">
+                            <img class="illustration" src="/img/drink.jpg" alt="drink image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- == PAGE 3 ======================================================== -->
+	<div class="section" id="section2">
+
+        <div class="container-fluid content-container target3">
+            <div class="row full-screen">
+                <div class="col-xs-12 col-lg-6 col-lg-push-6">
+                    <div class="content-wrapper" id="id3">
+                        <div class="content">
+                            <p>shop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6 col-lg-pull-6">
+                    <div class="content-wrapper">
+                        <div class="content">
+                            <img class="illustration" src="/img/drink2.jpg" alt="drink image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- == PAGE 4 ======================================================== -->
+	<div class="section" id="section3">
+
+        <div class="container-fluid content-container">
+            <div class="row full-screen">
+                <div class="col-xs-12 col-lg-6">
+                    <div class="content-wrapper" id="id4">
+                        <div class="content" style="transform: rotateZ(-0deg)">
+                            <p>eat</p>
+                            <p>drink</p>
+                            <p>sleep</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="content-wrapper">
+                        <div class="content">
+                            <img class="illustration" src="/img/drink.jpg" alt="drink image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- == PAGE 5 ======================================================== -->
+    <div class="section fp-auto-height" id="section4">
+        <h1>footer</h1>
+    </div>
+</div>
+
+{% endblock %}
