@@ -11,13 +11,17 @@ body {
 }
 
 /* line 23, ../sass/screen.scss */
-.header-container {
-  height: calc(100vh - 50px);
-  margin-top: 50px;
-  border: 0px solid red;
+.navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus {
+  background-color: transparent !important;
 }
 
 /* line 29, ../sass/screen.scss */
+.header-container {
+  height: calc(100vh - 50px);
+  margin-top: -20px;
+}
+
+/* line 34, ../sass/screen.scss */
 .home-header-wrapper {
   display: table;
   width: 100%;
@@ -25,16 +29,16 @@ body {
   border: 0px solid red;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 .home-header {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
   border: 0px solid blue;
 }
-/* line 43, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 .home-header h1 {
-  text-shadow: 2px 4px #C19905;
+  text-shadow: 1px 2px #b87333;
   border: 0px solid black;
   color: #111;
   font-family: UnifrakturCook;
@@ -42,18 +46,19 @@ body {
   line-height: 1.2em;
   letter-spacing: 1.2px;
 }
-/* line 53, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .home-header p {
   font-size: 24px;
-  margin-bottom: 50px;
+  font-family: Gruppo;
+  margin-bottom: 0px;
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .content-container {
   height: 100vh;
   border: 0px solid blue;
 }
-/* line 65, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .content-container .content {
   color: #fff;
   display: table-cell;
@@ -61,7 +66,7 @@ body {
   vertical-align: middle;
   border: 0px solid green;
 }
-/* line 73, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .content-container .content p {
   font-size: 48px;
   font-family: Gruppo;
@@ -69,12 +74,12 @@ body {
   line-height: 1em;
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .full-screen {
   height: 50%;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 .content-wrapper {
   display: table;
   width: 100%;
@@ -83,18 +88,18 @@ body {
   width: calc(100% + 30px);
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 div[class*="col-"] {
   height: 100%;
 }
 
-/* line 101, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 img.illustration {
   width: 80%;
   box-shadow: 1px 1px 20px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 #id2 {
   background-color: #00cc00;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwY2MwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwYjMwMCIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
@@ -104,7 +109,7 @@ img.illustration {
   background-image: radial-gradient(at 50% 50% at 50% 50%, #00cc00, #00b300);
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 #id3 {
   background-color: #00cccc;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwY2NjYyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwYjNiMyIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
@@ -114,7 +119,7 @@ img.illustration {
   background-image: radial-gradient(at 50% 50% at 50% 50%, #00cccc, #00b3b3);
 }
 
-/* line 145, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 #id4 {
   background-color: #cc00cc;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NjMDBjYyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2IzMDBiMyIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
@@ -124,47 +129,170 @@ img.illustration {
   background-image: radial-gradient(at 50% 50% at 50% 50%, #cc00cc, #b300b3);
 }
 
+/* line 170, ../sass/screen.scss */
+footer {
+  margin: 0 -15px;
+  padding: 10px;
+  border: 1px solid red;
+}
+
 @media (min-width: 768px) {
-  /* line 168, ../sass/screen.scss */
+  /* line 181, ../sass/screen.scss */
+  .hamburger {
+    display: none !important;
+  }
+
+  /* line 186, ../sass/screen.scss */
   .home-header h1 {
     font-size: 120px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 179, ../sass/screen.scss */
+  /* line 197, ../sass/screen.scss */
   .home-header h1 {
     font-size: 196px;
     margin-bottom: 20px;
+    text-shadow: 2px 4px #b87333;
   }
-  /* line 184, ../sass/screen.scss */
+  /* line 203, ../sass/screen.scss */
   .home-header p {
     font-size: 60px;
-    margin-bottom: 150px;
   }
 
-  /* line 190, ../sass/screen.scss */
+  /* line 209, ../sass/screen.scss */
   .content-wrapper {
     width: calc(100% + 30px);
   }
 
-  /* line 196, ../sass/screen.scss */
+  /* line 215, ../sass/screen.scss */
   .content-container .content p {
     font-size: 196px;
   }
 
-  /* line 202, ../sass/screen.scss */
+  /* line 221, ../sass/screen.scss */
   .full-screen {
     height: 100%;
   }
 
-  /* line 206, ../sass/screen.scss */
+  /* line 225, ../sass/screen.scss */
   .content-wrapper {
     width: calc(100% + 30px);
   }
 
-  /* line 210, ../sass/screen.scss */
+  /* line 229, ../sass/screen.scss */
   img.illustration {
     width: 80%;
     box-shadow: 1px 1px 100px 50px rgba(0, 0, 0, 0.4);
   }
+}
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+/* line 259, ../sass/screen.scss */
+.hamburger {
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+/* line 275, ../sass/screen.scss */
+.hamburger:hover {
+  opacity: 0.7;
+}
+
+/* line 279, ../sass/screen.scss */
+.hamburger-box {
+  width: 30px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+/* line 286, ../sass/screen.scss */
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: 0px;
+}
+
+/* line 292, ../sass/screen.scss */
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+/* line 306, ../sass/screen.scss */
+.hamburger-inner::after,
+.hamburger-inner::before {
+  content: "";
+  display: block;
+}
+
+/* line 312, ../sass/screen.scss */
+.hamburger-inner::before {
+  top: -10px;
+}
+
+/* line 316, ../sass/screen.scss */
+.hamburger-inner::after {
+  bottom: -10px;
+}
+
+/* line 322, ../sass/screen.scss */
+.hamburger--elastic .hamburger-inner {
+  top: 2px;
+  transition-duration: 0.275s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* line 328, ../sass/screen.scss */
+.hamburger--elastic .hamburger-inner::before {
+  top: 10px;
+  transition: opacity 0.125s 0.275s ease;
+}
+
+/* line 333, ../sass/screen.scss */
+.hamburger--elastic .hamburger-inner::after {
+  top: 20px;
+  transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* line 338, ../sass/screen.scss */
+.hamburger--elastic.is-active .hamburger-inner {
+  transform: translate3d(0, 10px, 0) rotate(135deg);
+  transition-delay: 0.075s;
+}
+
+/* line 343, ../sass/screen.scss */
+.hamburger--elastic.is-active .hamburger-inner::before {
+  transition-delay: 0s;
+  opacity: 0;
+}
+
+/* line 348, ../sass/screen.scss */
+.hamburger--elastic.is-active .hamburger-inner::after {
+  transform: translate3d(0, -20px, 0) rotate(-270deg);
+  transition-delay: 0.075s;
 }
