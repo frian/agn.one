@@ -24,6 +24,28 @@ body {
     background-color: transparent!important;
 }
 
+// // -- dropdown in top navbar
+// .dropdown-menu > li > a {
+//     padding: 10px 20px;
+// }
+//
+// -- dropdown in collapsed navbar
+.navbar-nav > li > ul > li > a {
+    padding: 20px 15px;
+}
+
+
+// -- submenu in mobile menu
+.navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a {
+
+    padding: 20px 15px 20px 25px;
+
+}
+
+// -- menu in mobile menu
+a.dropdown-toggle {
+    padding: 25px!important;
+}
 
 // == FIRST PAGE ==============================================================
 .header-container {
@@ -167,16 +189,53 @@ img.illustration {
     }
 }
 
+// == FOOTER ==================================================================
 footer {
+    // color: #eee;
     margin: 0 -15px;
     padding: 10px;
-    border: 1px solid red;
+    background-color: #fff;
+    border-top: 1px solid #bbb;
+    @include background-image(
+        linear-gradient(
+            to bottom left,
+            darken(lime, 10%),
+            darken(lime, 30%)
+        )
+    );
+
+    p {
+        color: white;
+        // font-weight: bold;
+        text-align: center;
+    }
+
+    a {
+        color: #eee;
+    }
+
+    a:hover {
+        color: white;
+    }
 }
 
-// == FOOTER ==================================================================
+i[class*='icon-'] {
+    color: black;
+    font-size: 1.2em;
+}
+
+
+.navbar-collapse .collapse .in  > li >  {
+    color: red!important;
+}
+
 
 // -- MEDIUM SCREEN --
 @media (min-width: 768px) {
+
+    a.dropdown-toggle {
+        padding: 15px!important;
+    }
 
     .hamburger {
         display: none!important;
@@ -245,6 +304,16 @@ footer {
     //         transform: perspective(100px) rotateZ(1deg);
     //     }
     // }
+
+    footer {
+        padding: 20px;
+
+        p {
+            font-size: 1.4em;
+            text-align: center;
+        }
+    }
+
 }
 
 
