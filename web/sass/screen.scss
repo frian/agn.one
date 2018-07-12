@@ -14,7 +14,7 @@ $navbar-height: 50px;
 // == FIRST PAGE ==============================================================
 .header-container {
     height: calc(100vh - #{$navbar-height});
-    margin-top: -20px;
+    margin-top: $navbar-height;
 }
 
 .home-header-wrapper {
@@ -165,6 +165,13 @@ i[class*='icon-'] {
 
 // -- MEDIUM SCREEN --
 @media (min-width: 768px) {
+
+    $navbar-height: 80px;
+
+    .header-container {
+        height: calc(100vh - #{$navbar-height});
+        margin-top: $navbar-height;
+    }
 
     .hamburger {
         display: none!important;
