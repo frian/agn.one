@@ -1,11 +1,12 @@
 $(function() {
 
     // variables
-    var $section1 = $('#section1 .is-animated'),
+    var
+        // $section1 = $('#section1 .is-animated'),
         $section1img = $('#section1 img'),
-        $section2 = $('#section2 .is-animated'),
+        // $section2 = $('#section2 .is-animated'),
         $section2img = $('#section2 img'),
-        $section3 = $('#section3 .is-animated'),
+        // $section3 = $('#section3 .is-animated'),
         $section3img = $('#section3 img');
 
     var myFullpage = new fullpage('#fullpage', {

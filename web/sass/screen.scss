@@ -91,10 +91,6 @@ $navbar-height: 50px;
     height: 100%;
     margin-left: -15px;
     width: calc(100% + 30px);
-
-    transition: opacity 3s ease;
-    transition-delay: 0.5s;
-    // opacity: 1;
 }
 
 
@@ -111,14 +107,23 @@ img.illustration {
 
 // == OTHER PAGES =============================================================
 #id2 {
+    transition: opacity 3s ease;
+    transition-delay: 0.5s;
+    opacity: 0;
     background-color: darken(lime, 12%);
 }
 
 #id3 {
+    transition: opacity 3s ease;
+    transition-delay: 0.5s;
+    opacity: 0;
     background-color: darken(#0ff, 12%);
 }
 
 #id4 {
+    transition: opacity 3s ease;
+    transition-delay: 0.5s;
+    opacity: 0;
     background-color: darken(#f0f, 12%);
 }
 
