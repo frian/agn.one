@@ -22,24 +22,19 @@
 //
 // }
 
-// -- menu in mobile menu
-// a.dropdown-toggle {
-//     padding: 25px!important;
-// }
+// -- dropdown link in mobile menu
+a.dropdown-toggle {
+    padding: 25px!important;
+}
 
-// .navbar-collapse .collapse .in  > li >  {
-//     color: red!important;
-// }
+// -- dropdown link in menu
+.navbar-nav .dropdown-menu .dropdown-header, .navbar-nav .dropdown-menu > li > a {
+    padding: 20px 15px 20px 25px;
+}
 
-// .navbar-collapse, .navbar-header {
-//     background-color: darken(lime, 10%);
-// }
-//
-// .navbar-default .navbar-nav > li > a {
-//
-//     color: #f00;
-//
-// }
+.navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a {
+    padding: 20px 15px 20px 25px;
+}
 
 
 .navbar-nav {
@@ -48,7 +43,21 @@
     font-size: 18px;
 }
 
+.navbar-brand {
+    height: $navbar-height;
+    line-height: $navbar-height;
+    padding: 0 20px;
+    font-size: 1.8em;
+    font-family: UnifrakturCook;
+}
+
 @media (min-width: 768px) {
+
+    $navbar-height: 80px;
+
+    .header-container {
+        height: calc(100vh - 80px)!important;
+    }
 
     .navbar-default {
 
@@ -59,34 +68,23 @@
         .navbar-nav {
             > li {
                 > a {
-                    padding-top: 0;
+                    padding-top: 0!important;
                 }
             }
         }
     }
 
     .navbar-brand {
-        padding: 0 15px;
-        height: 80px;
-        line-height: 80px;
+        height: $navbar-height;
+        line-height: $navbar-height;
+        padding: 0 30px;
     }
 
     .navbar-nav > li > a {
-        line-height: 80px;
+        height: $navbar-height;
+        line-height: $navbar-height;
         padding: 0 15px;
     }
-
-    .navbar {
-      min-height: 80px;
-    }
-
-
-    .navbar-toggle {
-      /* (80px - button height 34px) / 2 = 23px */
-      margin-top: 23px;
-      padding: 9px 10px !important;
-    }
-
 }
 
 
