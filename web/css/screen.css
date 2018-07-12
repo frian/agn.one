@@ -119,29 +119,48 @@ body {
   transition-delay: 0.075s;
 }
 
-/* line 26, ../sass/navbar.scss */
-a.dropdown-toggle {
-  padding: 25px !important;
+/* line 3, ../sass/_navbar.scss */
+.navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus {
+  background-color: transparent !important;
 }
 
-/* line 31, ../sass/navbar.scss */
+/* line 26, ../sass/_navbar.scss */
+a.dropdown-toggle {
+  padding: 25px !important;
+  font-size: 1.2em;
+}
+
+/* line 33, ../sass/_navbar.scss */
 .navbar-nav .dropdown-menu .dropdown-header, .navbar-nav .dropdown-menu > li > a {
   padding: 20px 15px 20px 25px;
 }
 
-/* line 35, ../sass/navbar.scss */
+/* line 39, ../sass/_navbar.scss */
 .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a {
   padding: 20px 15px 20px 25px;
+  font-size: 1.4em;
 }
 
-/* line 40, ../sass/navbar.scss */
+/* line 46, ../sass/_navbar.scss */
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+  color: #555;
+  background-color: white;
+  background-image: none !important;
+}
+
+/* line 54, ../sass/_navbar.scss */
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .active > a {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+}
+
+/* line 59, ../sass/_navbar.scss */
 .navbar-nav {
   font-family: Raleway;
   font-weight: 600;
   font-size: 18px;
 }
 
-/* line 46, ../sass/navbar.scss */
+/* line 65, ../sass/_navbar.scss */
 .navbar-brand {
   height: 50px;
   line-height: 50px;
@@ -151,28 +170,28 @@ a.dropdown-toggle {
 }
 
 @media (min-width: 768px) {
-  /* line 58, ../sass/navbar.scss */
+  /* line 77, ../sass/_navbar.scss */
   .header-container {
     height: calc(100vh - 80px) !important;
   }
 
-  /* line 64, ../sass/navbar.scss */
+  /* line 83, ../sass/_navbar.scss */
   .navbar-default .navbar-brand {
     font-size: 3em;
   }
-  /* line 70, ../sass/navbar.scss */
+  /* line 89, ../sass/_navbar.scss */
   .navbar-default .navbar-nav > li > a {
     padding-top: 0 !important;
   }
 
-  /* line 77, ../sass/navbar.scss */
+  /* line 96, ../sass/_navbar.scss */
   .navbar-brand {
     height: 80px;
     line-height: 80px;
     padding: 0 30px;
   }
 
-  /* line 83, ../sass/navbar.scss */
+  /* line 102, ../sass/_navbar.scss */
   .navbar-nav > li > a {
     height: 80px;
     line-height: 80px;
