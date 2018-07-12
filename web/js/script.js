@@ -31,8 +31,8 @@ $(function() {
                 $("#id3").css('opacity', 1);
             }
             else if (origin.index == 2 && destination.index == 3) {
-                $section2img.addClass('animated fadeInDownBig');
-                $section2img.css('animation-delay', '0.5s');
+                $section3img.addClass('animated fadeInDownBig');
+                $section3img.css('animation-delay', '0.5s');
                 $("#id4").css('opacity', 1);
             }
         }
