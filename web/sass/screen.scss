@@ -1,51 +1,14 @@
 @import "compass/css3/images";
-@import "compass/css3/border-radius";
-@import "compass/css3/transform";
+
+@import url('https://fonts.googleapis.com/css?family=Gruppo');
 
 $debug-border-width: 0px;
 
-body {
-    font-family: Raleway;
-    background-color: #eee;
-    background-attachment: fixed;
 
-    @include background-image(
-        radial-gradient(
-            at 50% 50%,
-            white,
-            #eee
-        )
-    );
-}
+@import "base";
+@import "hamburger";
+@import "navbar";
 
-// == NAVIGATION ==============================================================
-// -- remove BS hamburger menu backround
-.navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus  {
-    background-color: transparent!important;
-}
-
-// // -- dropdown in top navbar
-// .dropdown-menu > li > a {
-//     padding: 10px 20px;
-// }
-//
-// -- dropdown in collapsed navbar
-.navbar-nav > li > ul > li > a {
-    padding: 20px 15px;
-}
-
-
-// -- submenu in mobile menu
-.navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a {
-
-    padding: 20px 15px 20px 25px;
-
-}
-
-// -- menu in mobile menu
-a.dropdown-toggle {
-    padding: 25px!important;
-}
 
 // == FIRST PAGE ==============================================================
 .header-container {
@@ -75,12 +38,18 @@ a.dropdown-toggle {
         font-size: 80px;
         line-height: 1.2em;
         letter-spacing: 1.2px;
+        margin: 0 10px;
+        border: $debug-border-width solid red;
     }
 
     p {
+        color: #333;
+
         font-size: 24px;
-        font-family: Gruppo;
+        font-family: "Cardo";
+
         margin-bottom: 0px;
+        border: $debug-border-width solid blue;
     }
 }
 
@@ -103,6 +72,9 @@ a.dropdown-toggle {
             font-family: Gruppo;
             margin: 0;
             line-height: 1em;
+
+            transition: opacity 3s ease;
+            transition-delay: 0.5s;
         }
     }
 }
@@ -118,6 +90,10 @@ a.dropdown-toggle {
     height: 100%;
     margin-left: -15px;
     width: calc(100% + 30px);
+
+    transition: opacity 3s ease;
+    transition-delay: 0.5s;
+    // opacity: 0;
 }
 
 
@@ -134,59 +110,15 @@ img.illustration {
 
 // == OTHER PAGES =============================================================
 #id2 {
-    background-color: darken(lime, 10%);
-
-    // transform: perspective(100px) rotateX(0.2deg) translateY(4%) translateZ(10px);
-    // transform: perspective(100px) rotateZ(2deg);
-
-    @include background-image(
-        radial-gradient(
-            at 50% 50%,
-            darken(lime, 10%),
-            darken(lime, 15%)
-        )
-    );
-
-    .content {
-        // transform: perspective(100px) rotateZ(-2deg);
-        // transform: perspective(100px) rotateX(-0.2eg) translateY(0%);
-    }
+    background-color: darken(lime, 12%);
 }
 
 #id3 {
-    background-color: darken(#0ff, 10%);
-
-    // transform: perspective(100px) rotateX(-0.5deg) rotateY(-0.15deg) rotateZ(-1deg) translateY(-4%) translateZ(5px);
-
-    @include background-image(
-        radial-gradient(
-            at 50% 50%,
-            darken(#0ff, 10%),
-            darken(#0ff, 15%)
-        )
-    );
-
-    .content {
-        // transform: perspective(100px) rotateZ(1deg);
-    }
+    background-color: darken(#0ff, 12%);
 }
 
 #id4 {
-    background-color: darken(#f0f, 10%);
-
-    // transform: perspective(100px) rotateX(0.3deg) rotateY(0.75deg) rotateZ(1deg) translateY(-4%) translateZ(5px);
-
-    @include background-image(
-        radial-gradient(
-            at 50% 50%,
-            darken(#f0f, 10%),
-            darken(#f0f, 15%)
-        )
-    );
-
-    .content {
-        // transform: perspective(100px) rotateZ(-1deg);
-    }
+    background-color: darken(#f0f, 12%);
 }
 
 // == FOOTER ==================================================================
@@ -225,17 +157,12 @@ i[class*='icon-'] {
 }
 
 
-.navbar-collapse .collapse .in  > li >  {
-    color: red!important;
-}
-
-
 // -- MEDIUM SCREEN --
 @media (min-width: 768px) {
 
-    a.dropdown-toggle {
-        padding: 15px!important;
-    }
+    // a.dropdown-toggle {
+    //     padding: 15px!important;
+    // }
 
     .hamburger {
         display: none!important;
@@ -244,6 +171,11 @@ i[class*='icon-'] {
     .home-header {
         h1 {
             font-size: 120px;
+            margin: 20px 0;
+            padding-bottom: 30px;
+        }
+        p {
+            font-size: 36px;
         }
     }
 }
@@ -255,7 +187,6 @@ i[class*='icon-'] {
     .home-header {
         h1 {
             font-size: 196px;
-            margin-bottom: 20px;
             text-shadow: 2px 4px #b87333;
         }
 
@@ -290,21 +221,6 @@ i[class*='icon-'] {
         box-shadow: 1px 1px 100px 50px rgba(0,0,0, 0.4);
     }
 
-    // #id2 {
-    //
-    //     .content {
-    //         transform: perspective(100px) rotateZ(-2deg);
-    //         transform: perspective(100px) rotateX(-0.2eg) translateY(0%);
-    //     }
-    // }
-
-    // #id3 {
-    //
-    //     .content {
-    //         transform: perspective(100px) rotateZ(1deg);
-    //     }
-    // }
-
     footer {
         padding: 20px;
 
@@ -314,107 +230,4 @@ i[class*='icon-'] {
         }
     }
 
-}
-
-
-/*!
- * Hamburgers
- * @description Tasty CSS-animated hamburgers
- * @author Jonathan Suh @jonsuh
- * @site https://jonsuh.com/hamburgers
- * @link https://github.com/jonsuh/hamburgers
- */
- // -- global
-.hamburger {
-    padding: 10px;
-    display: inline-block;
-    cursor: pointer;
-    transition-property: opacity, filter;
-    transition-duration: 0.15s;
-    transition-timing-function: linear;
-    font: inherit;
-    color: inherit;
-    text-transform: none;
-    background-color: transparent;
-    border: 0;
-    margin: 0;
-    overflow: visible;
-}
-
-.hamburger:hover {
-    opacity: 0.7;
-}
-
-.hamburger-box {
-    width: 30px;
-    height: 24px;
-    display: inline-block;
-    position: relative;
-}
-
-.hamburger-inner {
-    display: block;
-    top: 50%;
-    margin-top: 0px;
-}
-
-.hamburger-inner,
-.hamburger-inner::after,
-.hamburger-inner::before {
-    // border: 1px solid blue;
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-    border-radius: 4px;
-    position: absolute;
-    transition-property: transform;
-    transition-duration: 0.15s;
-    transition-timing-function: ease;
-}
-
-.hamburger-inner::after,
-.hamburger-inner::before {
-    content: "";
-    display: block;
-}
-
-.hamburger-inner::before {
-    top: -10px;
-}
-
-.hamburger-inner::after {
-    bottom: -10px;
-}
-
-
-// -- icon
-.hamburger--elastic .hamburger-inner {
-    top: 2px;
-    transition-duration: 0.275s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.hamburger--elastic .hamburger-inner::before {
-    top: 10px;
-    transition: opacity 0.125s 0.275s ease;
-}
-
-.hamburger--elastic .hamburger-inner::after {
-    top: 20px;
-    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.hamburger--elastic.is-active .hamburger-inner {
-    transform: translate3d(0, 10px, 0) rotate(135deg);
-    transition-delay: 0.075s;
-}
-
-.hamburger--elastic.is-active .hamburger-inner::before {
-    transition-delay: 0s;
-    opacity: 0;
-}
-
-.hamburger--elastic.is-active .hamburger-inner::after {
-    transform: translate3d(0, -20px, 0) rotate(-270deg);
-    transition-delay: 0.075s;
 }

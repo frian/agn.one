@@ -1,0 +1,42 @@
+/* line 45, ../sass/navbar.scss */
+.navbar-nav {
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  /* line 55, ../sass/navbar.scss */
+  .navbar-default .navbar-brand {
+    font-size: 3em;
+  }
+  /* line 61, ../sass/navbar.scss */
+  .navbar-default .navbar-nav > li > a {
+    padding-top: 0;
+  }
+
+  /* line 68, ../sass/navbar.scss */
+  .navbar-brand {
+    padding: 0 15px;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  /* line 74, ../sass/navbar.scss */
+  .navbar-nav > li > a {
+    line-height: 80px;
+    padding: 0 15px;
+  }
+
+  /* line 79, ../sass/navbar.scss */
+  .navbar {
+    min-height: 80px;
+  }
+
+  /* line 84, ../sass/navbar.scss */
+  .navbar-toggle {
+    /* (80px - button height 34px) / 2 = 23px */
+    margin-top: 23px;
+    padding: 9px 10px !important;
+  }
+}
