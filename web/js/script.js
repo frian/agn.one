@@ -42,4 +42,95 @@ $(function() {
     $hamburger.on("click", function(e) {
         $hamburger.toggleClass("is-active");
     });
+
+
+
+    // -- get screen size
+    var screen = $(window);
+    var screenWidth  = screen.width();
+    var screenHeight = screen.height();
+
+    // console.log("SCREEN SIZE");
+    // console.log("  screenWidth : " +  screenWidth);
+    // console.log("  screenHeight : " + screenHeight);
+    // console.log("");
+
+
+    // -- calculate max img width and height
+    var imgMaxWidth  = screenWidth * 80 / 100;
+    var imgMaxHeight = (screenHeight / 2) - 40;
+
+    // console.log("IMAGE BOUNDARIES");
+    // console.log("  imgMaxWidth : " +  imgMaxWidth);
+    // console.log("  imgMaxHeight : " + imgMaxHeight);
+    // console.log("");
+
+
+    // -- get image size
+    var img = $("#section1 img");
+
+    var imgOriginalWidth =  img.width();
+    var imgOriginalHeight = img.height();
+
+    // console.log("IMAGE SIZE");
+    // console.log("  imgOriginalWidth : " +  imgOriginalWidth);
+    // console.log("  imgOriginalHeight : " + imgOriginalHeight);
+    // console.log("");
+
+
+    console.log("REPORT");
+    var process = 0;
+    var processWidth = 0;
+    var processHeight = 0;
+
+    if (imgOriginalWidth > imgMaxWidth) {
+        console.log("  image is to large.");
+        process = 1;
+        processWidth = 1
+    }
+    if (imgOriginalHeight > imgMaxHeight) {
+        console.log("  image is to height :");
+        console.log("    imgOriginalHeight : " + imgOriginalHeight);
+        console.log("    imgMaxHeight : " + imgMaxHeight);
+
+        process = 1;
+        processHeight = 1;
+    }
+    console.log('');
+
+
+    if (process) {
+
+        var imgRatio = round((imgOriginalWidth / imgOriginalHeight), 2);
+
+        var images = $(".illustration");
+        console.log(images);
+
+        if (processWidth) {
+            console.log("not implemented");
+        }
+        else {
+            console.log("PROCESSING HEIGHT :");
+            var newWidth = imgMaxHeight * imgRatio;
+            console.log("  new image width : " + newWidth);
+            console.log("  applying css ...");
+
+            images.each(function(i, img) {
+                $(img).css('width', newWidth);
+                $(img).css('height', imgMaxHeight);
+            });
+
+            console.log("  done.");
+        }
+
+    }
+    else {
+        console.log("  nothing to do :)");
+        return false;
+    }
+
 });
+
+function round(x, digits){
+  return parseFloat(x.toFixed(digits))
+}

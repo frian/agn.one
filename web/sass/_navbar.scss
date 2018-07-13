@@ -68,13 +68,22 @@ a.dropdown-toggle {
     padding: 0 20px;
     font-size: 1.8em;
     font-family: UnifrakturCook;
+    color: #222!important;
+}
+
+.navbar-nav {
+    > li {
+        > a {
+            color: #333!important;
+        }
+    }
 }
 
 @media (min-width: 768px) {
 
     $navbar-height: 80px;
 
-    .navbar-default {
+    // .navbar-default {
         .navbar-brand {
             font-size: 3em;
         }
@@ -86,7 +95,7 @@ a.dropdown-toggle {
                 }
             }
         }
-    }
+    // }
 
     .navbar-brand {
         height: $navbar-height;
