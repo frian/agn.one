@@ -6,6 +6,13 @@ $debug-border-width: 0px;
 
 $navbar-height: 50px;
 
+$greeen-bg: darken(lime, 12%);
+$blue-bg:   darken(#0ff, 12%);
+$purple-bg: darken(#f0f, 12%);
+$dark-grey: #333;
+$black:     #111;
+
+
 @import "base";
 @import "hamburger";
 @import "navbar";
@@ -34,7 +41,7 @@ $navbar-height: 50px;
     h1 {
         text-shadow: 1px 2px #b87333;
         border: $debug-border-width solid black;
-        color: #111;
+        color: $black;
         font-family: UnifrakturCook;
         font-size: 80px;
         line-height: 1.2em;
@@ -44,7 +51,7 @@ $navbar-height: 50px;
     }
 
     p {
-        color: #333;
+        color: $dark-grey;
 
         font-size: 24px;
         font-family: "Cardo";
@@ -91,7 +98,6 @@ $navbar-height: 50px;
     height: 100%;
     margin-left: -15px;
     width: calc(100% + 30px);
-    // border: 5px solid red;
 }
 
 
@@ -102,7 +108,7 @@ div[class*="col-"] {
 
 img.illustration {
     max-width: 80%;
-    box-shadow: 0 20px 15px -15px #333;
+    box-shadow: 0 20px 15px -15px $dark-grey;
 }
 
 
@@ -111,41 +117,39 @@ img.illustration {
     transition: opacity 3s ease;
     transition-delay: 0.5s;
     opacity: 1;
-    background-color: darken(lime, 12%);
+    background-color: $greeen-bg;
 }
 
 #id3 {
     transition: opacity 3s ease;
     transition-delay: 0.5s;
     opacity: 0;
-    background-color: darken(#0ff, 12%);
+    background-color: $blue-bg;
 }
 
 #id4 {
     transition: opacity 3s ease;
     transition-delay: 0.5s;
     opacity: 0;
-    background-color: darken(#f0f, 12%);
+    background-color: $purple-bg;
 }
 
 // == FOOTER ==================================================================
 footer {
-    // color: #eee;
     margin: 0 -15px;
     padding: 10px;
-    background-color: #fff;
+    background-color: $greeen-bg;
     border-top: 1px solid #bbb;
     @include background-image(
         linear-gradient(
             to bottom left,
-            darken(lime, 10%),
+            darken(lime, 20%),
             darken(lime, 30%)
         )
     );
 
     p {
         color: white;
-        // font-weight: bold;
         text-align: center;
     }
 
@@ -190,7 +194,7 @@ i[class*='icon-'] {
     }
 
     img.illustration {
-        box-shadow: 0 40px 30px -30 px #333;
+        box-shadow: 0 40px 30px -30 px $dark-grey;
     }
 }
 
@@ -215,7 +219,6 @@ i[class*='icon-'] {
 
         p {
             font-size: 60px;
-            // margin-bottom: 150px;
         }
     }
 
@@ -240,7 +243,7 @@ i[class*='icon-'] {
     }
 
     img.illustration {
-        box-shadow: 0 80px 60px -60px #333;
+        box-shadow: 0 80px 60px -60px $dark-grey;
     }
 
     footer {
