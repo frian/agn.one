@@ -16,4 +16,4 @@
 /vendor/
 /web/bundles/
 /web/.sass-cache/
-#/web/img/
+/web/img/*
