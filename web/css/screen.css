@@ -375,47 +375,53 @@ i[class*='icon-'] {
     box-shadow: 0 40px 30px -30 px #333;
   }
 }
+@media (min-width: 992px) {
+  /* line 200, ../sass/screen.scss */
+  .full-screen {
+    height: 100%;
+  }
+}
 @media (min-width: 1200px) {
-  /* line 208, ../sass/screen.scss */
+  /* line 211, ../sass/screen.scss */
   .home-header h1 {
     font-size: 196px;
     text-shadow: 2px 4px #b87333;
   }
-  /* line 213, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   .home-header p {
     font-size: 60px;
   }
 
-  /* line 219, ../sass/screen.scss */
+  /* line 222, ../sass/screen.scss */
   .content-wrapper {
     width: calc(100% + 30px);
   }
 
-  /* line 225, ../sass/screen.scss */
+  /* line 228, ../sass/screen.scss */
   .content-container .content p {
     font-size: 196px;
   }
 
-  /* line 231, ../sass/screen.scss */
+  /* line 234, ../sass/screen.scss */
   .full-screen {
     height: 100%;
   }
 
-  /* line 235, ../sass/screen.scss */
+  /* line 238, ../sass/screen.scss */
   .content-wrapper {
     width: calc(100% + 30px);
   }
 
-  /* line 239, ../sass/screen.scss */
+  /* line 242, ../sass/screen.scss */
   img.illustration {
     box-shadow: 0 80px 60px -60px #333;
   }
 
-  /* line 243, ../sass/screen.scss */
+  /* line 246, ../sass/screen.scss */
   footer {
     padding: 20px;
   }
-  /* line 246, ../sass/screen.scss */
+  /* line 249, ../sass/screen.scss */
   footer p {
     font-size: 1.4em;
     text-align: center;
