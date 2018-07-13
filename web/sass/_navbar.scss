@@ -4,24 +4,6 @@
     background-color: transparent!important;
 }
 
-// -- dropdown in top navbar
-// .dropdown-menu > li > a {
-//     padding: 10px 20px;
-// }
-
-
-// -- dropdown in collapsed navbar
-// .navbar-nav > li > ul > li > a {
-//     padding: 20px 15px;
-// }
-
-// -- submenu in mobile menu
-// .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a {
-//
-//     padding: 20px 15px 20px 25px;
-//
-// }
-
 // -- dropdown link
 a.dropdown-toggle {
     padding: 25px!important;
@@ -44,7 +26,6 @@ a.dropdown-toggle {
 
 // -- remove active dropdown background
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
-
     color: #555;
     background-color: white;
     background-image: none!important;
@@ -54,7 +35,6 @@ a.dropdown-toggle {
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .active > a {
     box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
 }
-
 
 .navbar-nav {
     font-family: Raleway;
@@ -71,174 +51,31 @@ a.dropdown-toggle {
     color: #222!important;
 }
 
-.navbar-nav {
-    > li {
-        > a {
-            color: #333!important;
-        }
-    }
+.navbar-nav > li > a {
+    height: $navbar-height;
+    line-height: $navbar-height;
+    padding: 0 15px!important;
+    color: #333!important;
 }
 
 @media (min-width: 768px) {
 
     $navbar-height: 80px;
 
-    // .navbar-default {
-        .navbar-brand {
-            font-size: 3em;
-        }
-
-        .navbar-nav {
-            > li {
-                > a {
-                    padding-top: 0!important;
-                }
-            }
-        }
-    // }
-
     .navbar-brand {
+        font-size: 3em;
         height: $navbar-height;
         line-height: $navbar-height;
         padding: 0 30px;
     }
 
+    .navbar-right {
+        margin-right: 0;
+    }
+
     .navbar-nav > li > a {
         height: $navbar-height;
         line-height: $navbar-height;
-        padding: 0 15px;
+        padding: 0 15px!important;
     }
 }
-
-
-
-
-
-// -- change navbar colors
-//
-// $bgDefault      : #9b59b6;
-// $bgHighlight    : #8e44ad;
-// $colDefault     : #ecf0f1;
-// $colHighlight   : #ecdbff;
-// $bgDefault      : #fff;
-// $bgHighlight    : #eee;
-// $colDefault     : #333;
-// $colHighlight   : #111;
-// $dropDown       : false;
-//
-// .navbar-default {
-//     background-image: none;
-//     background-image: linear-gradient(to top left, rgba(0,0,0, 0.1), rgba(255,255,255, 0.1)),;
-//     background-color: $bgDefault;
-//     border-color: $bgHighlight;
-//     border-radius: 0;
-//     // border-color: #666;
-//     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-//
-//
-//     .navbar-brand {
-//         font-family: UnifrakturCook;
-//         font-size: 1.8em;
-//         color: $colDefault;
-//
-//         &:focus,
-//         &:hover {
-//             color: $colHighlight;
-//         }
-//     }
-//
-//     .navbar-text {
-//         color: $colDefault;
-//     }
-//
-//     .navbar-nav {
-//         > li {
-//             > a {
-//                 color: $colDefault;
-//                 // font-weight: bold;
-//                 font-size: 1.2em;
-//
-//                 &:focus,
-//                 &:hover {
-//                     color: $colHighlight;
-//                 }
-//             }
-//             @if $dropDown {
-//                 > .dropdown-menu {
-//                     background-color: $bgDefault;
-//
-//                     > li {
-//                         > a {
-//                             color: $colDefault;
-//
-//                             &:focus,
-//                             &:hover {
-//                                 color: $colHighlight;
-//                                 background-color: $bgHighlight;
-//                             }
-//                         }
-//
-//                         &.divider {
-//                             background-color: $bgHighlight;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//         @if $dropDown {
-//             .open .dropdown-menu > .active {
-//                 > a:focus,
-//                  > a:hover,
-//                 > a {
-//                     color: $colHighlight;
-//                     background-color: $bgHighlight;
-//                 }
-//             }
-//         }
-//
-//         > .active {
-//             > a:focus,
-//              > a:hover,
-//             > a {
-//                 color: $colHighlight;
-//                 background-color: $bgHighlight;
-//             }
-//         }
-//
-//         > .open {
-//             > a:focus,
-//              > a:hover,
-//             > a {
-//                 color: $colHighlight;
-//                 background-color: $bgHighlight;
-//                 background-image: none;
-//             }
-//         }
-//     }
-//
-//     .navbar-toggle {
-//         border-color: $bgHighlight;
-//
-//         &:focus,
-//         &:hover {
-//             background-color: $bgHighlight;
-//         }
-//
-//         .icon-bar {
-//             background-color: $colDefault;
-//         }
-//     }
-//
-//     .navbar-collapse,
-//     .navbar-form {
-//         border-color: $colDefault;
-//     }
-//
-//     .navbar-link {
-//         color: $colDefault;
-//
-//         &:hover {
-//             color: $colHighlight;
-//         }
-//     }
-// }
