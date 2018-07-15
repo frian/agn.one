@@ -347,6 +347,11 @@ img.illustration {
   background-color: #c200c2;
 }
 
+#drink, #eat {
+  transition: opacity 3s ease;
+  opacity: 0;
+}
+
 /* == FOOTER =============================================================== */
 footer {
   margin: 0 -15px;

@@ -4,11 +4,20 @@ $(function() {
     var image = (header).attr('data-src');
     console.log(image);
 
+    var img = new Image();
+    img.onload = function () {
+       header.css('background-image', 'url(' + image + ')');
+       header.css('opacity', '1');
+    }
+    img.src = image;
+
+
+
     // if (screenWidth >= 992) {
     //     imgMaxHeight = screenHeight - 40;
     // }
 
-    header.css('background-image', 'url(' + image + ')');
+    // header.css('background-image', 'url(' + image + ')');
 
 
     var myFullpage = new fullpage('#fullpage', {

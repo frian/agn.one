@@ -187,6 +187,13 @@ img.illustration {
     background-color: $purple-bg;
 }
 
+#drink, #eat {
+    transition: opacity 3s ease;
+    // transition-delay: 0.5s;
+    opacity: 0;
+}
+
+
 /* == FOOTER =============================================================== */
 footer {
     margin: 0 -15px;
