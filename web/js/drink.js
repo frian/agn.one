@@ -6,10 +6,10 @@ $(function() {
 
     var img = new Image();
     img.onload = function () {
-        header.css('background-image', 'url(' + image + ')');
-        header.css('opacity', '1');
-        $(".header-content").css('opacity', '1');
-        $(".loader").remove();
+       header.css('background-image', 'url(' + image + ')');
+       header.css('opacity', '1');
+       $(".header-content").css('opacity', '1');
+       $(".loader").remove();
     }
     img.src = image;
 
