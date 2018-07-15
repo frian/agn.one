@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Gruppo");
 body {
   font-family: Raleway;
   background-color: white;
@@ -258,7 +257,13 @@ a.dropdown-toggle {
 #drink {
   background-position: center;
   background-size: cover;
-  background-image: url("/img/mineral-water-lime-ice-mint-web.jpg");
+  background-image: url("/img/empty.png");
+}
+
+#eat {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/img/empty.png");
 }
 
 /* == OTHER PAGES COMMON =================================================== */

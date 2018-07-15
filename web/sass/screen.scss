@@ -1,7 +1,5 @@
 @import "compass/css3/images";
 
-@import url('https://fonts.googleapis.com/css?family=Gruppo');
-
 $debug-border-width: 0px;
 
 $navbar-height: 50px;
@@ -88,8 +86,15 @@ $black:     #111;
 #drink {
     background-position: center;
     background-size: cover;
-    background-image: url('/img/mineral-water-lime-ice-mint-web.jpg');
+    background-image: url('/img/empty.png'); // mineral-water-lime-ice-mint-web.jpg
 }
+
+#eat {
+    background-position: center;
+    background-size: cover;
+    background-image: url('/img/empty.png'); // spaghetti-web.jpg
+}
+
 
 /* == OTHER PAGES COMMON =================================================== */
 .content-container {

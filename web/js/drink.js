@@ -1,5 +1,16 @@
 $(function() {
 
+    var header = $('[data-src]');
+    var image = (header).attr('data-src');
+    console.log(image);
+
+    // if (screenWidth >= 992) {
+    //     imgMaxHeight = screenHeight - 40;
+    // }
+
+    header.css('background-image', 'url(' + image + ')');
+
+
     var myFullpage = new fullpage('#fullpage', {
 
         normalScrollElements: '#menu',
