@@ -16,6 +16,7 @@ $black:     #111;
 @import "navbar";
 
 
+
 /* == FIRST PAGE =========================================================== */
 .header-container {
     height: calc(100vh - #{$navbar-height});
@@ -187,10 +188,10 @@ img.illustration {
     background-color: $purple-bg;
 }
 
-#drink, #eat {
+#drink h1, #eat h1 {
     transition: opacity 3s ease;
     // transition-delay: 0.5s;
-    opacity: 0;
+    // opacity: 0;
 }
 
 

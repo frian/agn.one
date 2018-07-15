@@ -347,9 +347,8 @@ img.illustration {
   background-color: #c200c2;
 }
 
-#drink, #eat {
+#drink h1, #eat h1 {
   transition: opacity 3s ease;
-  opacity: 0;
 }
 
 /* == FOOTER =============================================================== */
