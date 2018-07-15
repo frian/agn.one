@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block js %}
-    <script defer src="/js/home.js"></script>
+    <script defer src="/js/drink.js"></script>
 {% endblock %}
 
 {% block stylesheets %}
@@ -18,13 +18,12 @@
 
         {{ include('default/navbar.html.twig') }}
 
-        <div class="container-fluid header-container">
+        <div class="container-fluid header-container" id="drink">
             <div class="header-wrapper">
-                <div class="header home-header">
-                    <p>il sito non ufficiale de</p>
-                    <h1>Agnone Bello</h1>
-                    <p>Città d'Arte e</p>
-                    <p>centro del Alto Molise</p>
+                <div class="header page-header">
+                    <div class="header-content">
+                        <h1>Have a drink ?</h1>
+                    </div>
                 </div>
             </div>
         </div>
@@ -37,18 +36,19 @@
         <div class="container-fluid content-container">
             <div class="row full-screen">
                 <div class="col-xs-12 col-md-6">
-                    <div class="content-wrapper" id="id2">
-                        <div class="content title-box">
-                            <p class="is-animated">drink</p>
-                            <p class="is-animated">eat</p>
-                            <p class="is-animated">sleep</p>
+                    <div class="content-wrapper">
+                        <div class="content shadowed">
+                            <h1>Caffè Letterario</h1>
+                            <p>Piazza Plebiscito 8</p>
+                            <p>0865 79203</p>
+                            <p>06:00 - 00:00</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6">
                     <div class="content-wrapper">
                         <div class="content">
-                            <img class="illustration" src="/img/drink4.jpg" alt="drink image">
+                            content
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
             <div class="row full-screen">
                 <div class="col-xs-12 col-md-6 col-md-push-6">
                     <div class="content-wrapper" id="id3">
-                        <div class="content title-box">
+                        <div class="content">
                             <p>shop</p>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                 <div class="col-xs-12 col-md-6 col-md-pull-6">
                     <div class="content-wrapper">
                         <div class="content">
-                            <img class="illustration" src="/img/shop2.jpg" alt="drink image">
+
                         </div>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
             <div class="row full-screen">
                 <div class="col-xs-12 col-md-6">
                     <div class="content-wrapper" id="id4">
-                        <div class="content title-box">
+                        <div class="content">
                             <p>visit</p>
                         </div>
                     </div>
@@ -96,7 +96,7 @@
                 <div class="col-xs-12 col-md-6">
                     <div class="content-wrapper">
                         <div class="content">
-                            <img class="illustration" src="/img/drink.jpg" alt="drink image">
+
                         </div>
                     </div>
                 </div>

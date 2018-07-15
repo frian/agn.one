@@ -2,12 +2,12 @@
 // -- remove BS hamburger menu backround
 .navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus  {
     background-color: transparent!important;
+    // background-color: red!important;
 }
 
 // -- dropdown link
 a.dropdown-toggle {
     padding: 25px!important;
-    font-size: 1.2em;
     // border: 1px solid red!important;
 }
 
@@ -19,16 +19,16 @@ a.dropdown-toggle {
 
 // -- dropdown link in mobile sub menu
 .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a {
-    padding: 20px 15px 20px 25px;
-    font-size: 1.4em;
+    padding: 30px 15px 30px 25px;
+    font-size: 1.6em;
     // border: 1px solid green!important;
 }
 
 // -- remove active dropdown background
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
-    color: #555;
-    background-color: white;
-    background-image: none!important;
+    // color: #555;
+    // background-color: white;
+    // background-image: none!important;
 }
 
 // -- change active dropdown box shadow
@@ -38,8 +38,8 @@ a.dropdown-toggle {
 
 .navbar-nav {
     font-family: Raleway;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 1.4em;
 }
 
 .navbar-brand {
@@ -52,10 +52,30 @@ a.dropdown-toggle {
 }
 
 .navbar-nav > li > a {
-    height: $navbar-height;
     line-height: $navbar-height;
-    padding: 0 15px!important;
+    padding: 15px!important;
     color: #333!important;
+    // border: 2px solid lime;
+}
+
+.navbar-nav > li > a:hover {
+    background-color: #eee!important;
+}
+
+.caret {
+    margin-left: 4px;
+    vertical-align: middle;
+    border-top: 8px dashed;
+    border-top: 8px solid\9;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+
+.dropdown.open .caret {
+    border-right: 8px dashed;
+    border-right: 8px solid\9;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
 }
 
 @media (min-width: 768px) {
@@ -77,5 +97,20 @@ a.dropdown-toggle {
         height: $navbar-height;
         line-height: $navbar-height;
         padding: 0 15px!important;
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .navbar-nav > li > a {
+        padding: 0 30px!important;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .navbar-nav > li > a {
+        padding: 0 50px!important;
     }
 }
