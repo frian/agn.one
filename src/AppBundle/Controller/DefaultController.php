@@ -40,4 +40,15 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
     }
+
+    /**
+     * @Route("/sleep", name="sleep")
+     */
+    public function sleepAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/sleep.html.twig', [
+            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
+        ]);
+    }
 }
