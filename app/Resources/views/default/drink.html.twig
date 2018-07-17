@@ -5,15 +5,7 @@
 {% endblock %}
 
 {% block stylesheets %}
-
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/fullpage.min.css">
-    <link rel="stylesheet" href="/css/fontello-embedded.css">
-    <link rel="stylesheet" href="/css/animate.css">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/screen.css">
-    <!-- Local CSS -->
-    <link rel="stylesheet" href="/css/screen.css">
+    {{ include('default/css.html.twig') }}
 {% endblock %}
 
 {% block body %}
@@ -27,7 +19,6 @@
 
         <div class="loader"><div class="spinner">loading</div></div>
         <div class="container-fluid header-container" id="drink" data-src="/img/mineral-water-lime-ice-mint.jpg">
-
             <div class="header-wrapper">
                 <div class="header page-header">
                     <div class="header-content">
