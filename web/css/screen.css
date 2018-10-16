@@ -258,6 +258,7 @@ a.dropdown-toggle {
 }
 
 .home-header {
+  opacity: 0;
   border: 0px solid blue;
 }
 .home-header h1 {

@@ -76,7 +76,7 @@ a {
     clear: both;
 }
 
-.header-content {
+.header-content, .home-header {
     opacity: 0;
 }
 
@@ -87,7 +87,6 @@ a {
     height: 100%;
     width: 100%;
     z-index: 9999;
-    /* background-color: black; */
 }
 
 .spinner {
