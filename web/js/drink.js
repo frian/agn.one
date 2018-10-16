@@ -1,8 +1,17 @@
 $(function() {
 
+
+    // -- load header image and remove loader
     var header = $('[data-src]');
     var image = (header).attr('data-src');
     console.log(image);
+
+    // TODO: change image size based on screen resolution
+    // // -- responsive
+    // if (screenWidth >= 992) {
+    //     imgMaxHeight = screenHeight - 40;
+    // }
+
 
     var img = new Image();
     img.onload = function () {
@@ -13,15 +22,7 @@ $(function() {
     }
     img.src = image;
 
-
-
-    // if (screenWidth >= 992) {
-    //     imgMaxHeight = screenHeight - 40;
-    // }
-
-    // header.css('background-image', 'url(' + image + ')');
-
-
+    // -- init fullpage
     var myFullpage = new fullpage('#fullpage', {
 
         normalScrollElements: '#menu',

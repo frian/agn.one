@@ -1,6 +1,10 @@
 $(function() {
 
-    // variables
+    $(".home-header").css('opacity', '1');
+    // -- remove loader
+    $(".loader").remove();
+
+    // -- variables
     var
         // $section1 = $('#section1 .is-animated'),
         $section1img = $('#section1 img'),
@@ -39,9 +43,11 @@ $(function() {
         }
     });
 
+
     sizeImages();
 
 
+    // -- handle resize
     var
         timeout = false, // holder for timeout id
         delay = 250; // delay after event is "complete" to run callback
@@ -61,10 +67,14 @@ $(function() {
 
 });
 
+
+// -- helper funciton
 function round(x, digits){
   return parseFloat(x.toFixed(digits))
 }
 
+
+// -- resize images if needed
 function sizeImages() {
 
     // -- get screen size
